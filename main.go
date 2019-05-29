@@ -12,7 +12,6 @@ func FirstWeekDay(year int) int {
 
 func main() {
 	year, week := time.Now().ISOWeek()
-	week = 1
 	thisWeekSunday := time.Date(year, 1, 1, 0, 0, 0, 0, time.Local).
 		AddDate(0, 0, (week-1)*7).
 		AddDate(0, 0, FirstWeekDay(year))
