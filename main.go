@@ -10,6 +10,7 @@ func firstWeekDay(year int) int {
 	return int(weekday)
 }
 
+
 func GetDayOfWeek(date time.Time, weekday time.Weekday) time.Time {
 	year, week := date.ISOWeek()
 	thisWeekSunday := time.Date(year, 1, 1, 0, 0, 0, 0, time.Local).
